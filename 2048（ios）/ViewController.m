@@ -18,11 +18,9 @@
      self.view.backgroundColor = [UIColor colorWithRed:250/255.0 green:248/255.0 blue:239/255.0 alpha:1];
     array = [[NSArray alloc]initWithObjects:image0,image1, image2,image3,image4,image5,image6,image7,image8,image9,image10,image11,image12,image13,image14,image15, nil];
     nowScore.textAlignment = NSTextAlignmentCenter;
-    bestScore.layer.cornerRadius = 20;
-    nowScore.layer.cornerRadius = 20;
-    bestScore.clipsToBounds =YES;
-    nowScore.clipsToBounds = YES;
     bestScore.textAlignment = NSTextAlignmentCenter;
+    bestScore.layer.cornerRadius = 1000.0f;
+    nowScore.layer.cornerRadius = 1000.0f;
     nowScore.numberOfLines = 2;
     nowScore.backgroundColor = [UIColor colorWithRed:187/255.0 green:173/255.0 blue:160/255.0 alpha:1];
     bestScore.backgroundColor = [UIColor colorWithRed:187/255.0 green:173/255.0 blue:160/255.0 alpha:1];
@@ -57,6 +55,7 @@
     [self showScore];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
